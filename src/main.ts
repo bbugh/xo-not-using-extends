@@ -3,6 +3,9 @@ import typescriptLogo from './typescript.svg';
 // eslint-disable-next-line import/extensions
 import {setupCounter} from './counter';
 
+// This should fail!
+document.querySelector('anything')!;
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <a href="https://vitejs.dev" target="_blank">
